@@ -29,6 +29,6 @@ jobs:
          uses: JamesIves/github-pages-deploy-action@v4
          with:
            token: ${{ secrets.GITHUB_TOKEN }}
-           # folder: /bulid
+           folder: /bulid/static/js
            branch: feat-1
            single-commit: true
