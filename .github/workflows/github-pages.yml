@@ -19,14 +19,15 @@ jobs:
          uses: actions/checkout@v3
          with:
            persist-credentials: false
+       - name: GIT CONF
+         run:  git config --global user.email "bloxinckoi@mail.ru"
+       - name: GIT CONF
+         run: git config --global user.name "Alienatedem"0
        - name: Install dependencies
          run: npm ci
        - name: Install dependencies
          run: npm install gh-pages --save-dev
-       - name: GIT CONF
-         run:  git config --global user.email "bloxinckoi@mail.ru"
-       - name: GIT CONF
-         run: git config --global user.name "Alienatedem"
+      
        - name: Build project
          run: npm run predeploy
        - name: Build project
