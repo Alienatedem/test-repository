@@ -29,6 +29,6 @@ jobs:
          uses: JamesIves/github-pages-deploy-action@v4
          with:
            token: ${{ secrets.GITHUB_TOKEN }}
-           folder: /
-           branch: feat-1
+           folder: /test
+           branch: gh-pages
            single-commit: true
