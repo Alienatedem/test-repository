@@ -23,13 +23,12 @@ jobs:
          run: npm ci
        - name: Install dependencies
          run: npm install gh-pages --save-dev
-       - name: Install dependencies
+       - name: GIT CONF
          run:  git config --global user.email "bloxinckoi@mail.ru"
-       - name: Install dependencies
+       - name: GIT CONF
          run: git config --global user.name "Alienatedem"
-
-     
-  
+       - name: Build project
+         run: npm run predeploy
        - name: Build project
          run: npm run deploy
     #    - name: same test
