@@ -33,10 +33,10 @@ jobs:
          run: npm run deploy
     #    - name: same test
     #      run: gh-build -b build
-    #    - name: Deploy
-        #  uses: JamesIves/github-pages-deploy-action@v4
-        #  with:
-        #    token: ${{ secrets.GITHUB_TOKEN }}
-        #    folder: /build/
-        #    branch: main
-        #    single-commit: true
+       - name: Deploy
+         uses: JamesIves/github-pages-deploy-action@v4
+         with:
+           token: ${{ secrets.GITHUB_TOKEN }}
+           folder: /build/
+           branch: main
+           single-commit: true
