@@ -21,16 +21,18 @@ jobs:
            persist-credentials: false
        - name: Install dependencies
          run: npm ci
+       - name: Install dependencies
+         run: npm install gh-pages --save-dev
     #    - name: Run checks
     #      run: npm run lint
        - name: Build project
          run: npm run build
        - name: same test
          run: gh-build -b build
-       - name: Deploy
-         uses: JamesIves/github-pages-deploy-action@v4
-         with:
-           token: ${{ secrets.GITHUB_TOKEN }}
-           folder: /build/
-           branch: main
-           single-commit: true
+    #    - name: Deploy
+        #  uses: JamesIves/github-pages-deploy-action@v4
+        #  with:
+        #    token: ${{ secrets.GITHUB_TOKEN }}
+        #    folder: /build/
+        #    branch: main
+        #    single-commit: true
