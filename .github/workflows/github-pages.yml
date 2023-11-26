@@ -29,15 +29,6 @@ jobs:
        - name: Build project
          run: npm run build
 
-       - name: Download artifact
-         id: download-artifact
-         uses: dawidd6/action-download-artifact@v2
-         with:
-           name: production-files
-           repo: https://github.com/Alienatedem/test-repository
-           # workflow: {the other workflow filename e.g. build.yml}
-           path: https://github.com/Alienatedem/test-repository/tree/gh-pages
-           search_artifacts: true
        # - name: same test
        #   run: npm run build
     #    - name: Deploy
