@@ -26,9 +26,9 @@ jobs:
     #    - name: Run checks
     #      run: npm run lint
        - name: Build project
-         run: npm run build
-       - name: same test
-         run: gh-build -b build
+         run: npm run deploy
+    #    - name: same test
+    #      run: gh-build -b build
     #    - name: Deploy
         #  uses: JamesIves/github-pages-deploy-action@v4
         #  with:
