@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Это тестовый проект Блохина Эмиля Евгеньевича, test CI/CD is complited new feat " ;
+  const greeting = "Это тестовый проект Блохина Эмиля Евгеньевича, test CI/CD is complited new feat isDeploy " ;
 
   return (
     <div className="App">
