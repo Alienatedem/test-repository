@@ -1,6 +1,6 @@
 {
-  "homepage": "https://alienatedem.github.io/test-repository/",
   "name": "test-app",
+  "homepage": "https://alienatedem.github.io/test-repository/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,11 +14,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint src/**.js"
+    "lint": "eslint src/**.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "url": "https://alienatedem.github.io/test-repository/"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +45,11 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/github": "^9.2.3",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "eslint": "^8.50.0",
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.1.0",
+    "semantic-release": "^22.0.8"
   }
 }
