@@ -2,9 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Это тестовый проект Блохина Эмиля Евгеньевича, test CI/CD is complited" ;
+  const greeting = "Это тестовый проект Блохина Эмиля Евгеньевича, test CI/CD is complited new feat isDeploy " ;
 
-  // console.log('This is App ');
   return (
     <div className="App">
      <header className="App-header">
