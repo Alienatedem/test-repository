@@ -1,4 +1,4 @@
-name: unit
+name: unit test
 on: 
     pull_request:
         branches: 
