@@ -21,7 +21,7 @@
     "deploy": "gh-pages -d build"
   },
   "repository": {
-    "url": "https://alienatedem.github.io/test-repository/"
+    "url": "https://github.com/Alienatedem/test-repository"
   },
   "eslintConfig": {
     "extends": [
